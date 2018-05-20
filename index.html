@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Book List</title>
+    <link href="book-review.css" rel="stylesheet">
+</head>
+<body>
+    <TABLE BORDER="5">
+        <TR>
+            <TH COLSPAN ="4">
+                <h2><br>Favorite Books</h2>
+            </TH>
+        </TR>
+        <TR>
+            <TH>Title</TH>
+            <TH>Author</TH>
+            <TH>Year</TH>
+            <TH>Links</TH>
+        </TR>
+        <TR>
+            <TD>The Hunger Games</TD>
+            <TD>Suzanne Collins</TD>
+            <TD>2008</TD>
+            <TD><a href="https://www.goodreads.com/book/show/2767052-the-hunger-games" alt="Hunger Games">More Info</TD>
+        </TR>
+    </TABLE>
+    <br>
+    <form method="post" action="/submit.php" id="usrform">
+        <p>
+            <label for="username">Username<abbr title="required">*</abbr></label>
+            <input id="username" type="text" name="username">             
+        </p>
+        <p>
+            <label for="password">Password<abbr title="required">*</abbr></label>
+            <input type="password" name="password">
+        </p>
+        <p>
+            <h4>Book Comments and Reviews</h4>
+            <textarea name="comment" form="usrform"></textarea>
+        </p>
+        <p>
+            <input type="submit">
+            <input type="reset">
+        </p>
+    </form>
+</body>
+</html>
